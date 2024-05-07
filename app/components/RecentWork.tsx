@@ -15,7 +15,7 @@ const RecentWork: React.FC = () =>{
                 <div className="recent-work-detail flex flex-col w-full col-start-2 col-span-2 justify-center items-center">
                 {recentworkdata.map((item) => {
                     return (
-                    <div className="recent-work-list w-full border-b-2 last:border-none pb-8 border-lightgray pt-4 first:pt-0 ">
+                    <div className="recent-work-list w-full border-b-2 last:border-none pb-8 border-lightgray pt-4 first:pt-0 " key={item.id}>
                         <div className="flex justify-between items-center ">
                             <div className="recent-work-link">
                                 <Link href={`http://${item.projectUrl}`} className="text-heading2 cursor-alias font-normal font-inter">{item.projectUrl}</Link>

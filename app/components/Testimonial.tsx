@@ -8,7 +8,7 @@ const Testimonial: React.FC = () =>{
                 <div className="recent-work-detail col-start-2 col-span-2 ">
                 {testimonialdata.map(item => {
                     return(
-                        <div className="first:mb-16 recent-review flex flex-col gap-5">
+                        <div key={item.id} className="first:mb-16 recent-review flex flex-col gap-5">
                         <p className="text-paraLg text-gray">{item.review}</p>
                         <div className="person-info flex items-center gap-3">
                             <img src={`assets/${item.image}`} />
