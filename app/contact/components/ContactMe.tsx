@@ -1,10 +1,11 @@
 import Link from "next/link"
+import Image from "next/image"
 
 const ContactMe: React.FC = () => {
     return(
         <>
         <div className="form-box flex flex-col w-[50%]">
-            <img src="assets/hero-img.png" className=" mb-14 w-[297px] h-[297px] rounded-full object-cover object-top " />
+            <Image src="assets/hero-img.png" alt="image" className=" mb-14 w-[297px] h-[297px] rounded-full object-cover object-top " />
             <div className="contact-detail flex flex-col mb-10">
                 <Link href="" className="text-paraMd">Contact Details</Link>
                 <Link href="http://mailto:rizkiamel9@gmail.com" className="text-paraLg">rizkiamel9@gmail.com</Link>

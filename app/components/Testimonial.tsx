@@ -1,4 +1,5 @@
 import testimonialdata from "@/data/testimonialdata"
+import Image from "next/image"
 
 const Testimonial: React.FC = () =>{
     return(
@@ -11,7 +12,9 @@ const Testimonial: React.FC = () =>{
                         <div key={item.id} className="first:mb-16 recent-review flex flex-col gap-5">
                         <p className="text-paraLg text-gray">{item.review}</p>
                         <div className="person-info flex items-center gap-3">
-                            <img src={`assets/${item.image}`} />
+                            <Image 
+                                src={`assets/${item.image}`} 
+                                alt={`${item.id}`} />
                             <div className="info-detail flex flex-col">
                                 <p className="text-paraMd font-medium">{item.name} </p>
                                 <p className="text-paraXs">{item.role} </p>

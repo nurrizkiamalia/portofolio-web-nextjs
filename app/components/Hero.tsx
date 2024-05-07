@@ -1,3 +1,4 @@
+import Image from "next/image"
 
 const Hero: React.FC = () =>{
     return(
@@ -10,7 +11,10 @@ const Hero: React.FC = () =>{
             <div className="slide-text text-headdisplay absolute bottom-0 mb-5 w-full translate-x-[-100%] whitespace-nowrap inline-block text-white hover:drop-shadow-2xl hover:shadow-black transition-all cursor-move hover:scale-105">
                 <h1>Webflow Developer - UI/UX Designer - Webflow Developer - UI/UX Designer</h1>
             </div>
-            <img src="assets\hero-img.png" className="img-hero"></img>
+            <Image 
+                src="assets\hero-img.png"
+                alt="Hero Image"
+                className="img-hero" />
         </div>
         </>
     )
