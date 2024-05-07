@@ -15,7 +15,7 @@ const Hero: React.FC = () =>{
                 src="/assets/hero-img.png"
                 alt="Hero Image"
                 layout='fill'
-                className="img-hero w-full h-full" />
+                className="img-hero w-fit h-fit" />
         </div>
         </>
     )

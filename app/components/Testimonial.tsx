@@ -15,7 +15,7 @@ const Testimonial: React.FC = () =>{
                             <Image 
                                 src={`/assets/${item.image}`} 
                                 alt={`${item.id}`}
-                                className="w-full h-full" />
+                                className="w-fit h-fit" />
                             <div className="info-detail flex flex-col">
                                 <p className="text-paraMd font-medium">{item.name} </p>
                                 <p className="text-paraXs">{item.role} </p>
