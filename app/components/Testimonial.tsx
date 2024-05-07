@@ -13,8 +13,9 @@ const Testimonial: React.FC = () =>{
                         <p className="text-paraLg text-gray">{item.review}</p>
                         <div className="person-info flex items-center gap-3">
                             <Image 
-                                src={`assets/${item.image}`} 
-                                alt={`${item.id}`} />
+                                src={`/assets/${item.image}`} 
+                                alt={`${item.id}`}
+                                className="w-full h-full" />
                             <div className="info-detail flex flex-col">
                                 <p className="text-paraMd font-medium">{item.name} </p>
                                 <p className="text-paraXs">{item.role} </p>

@@ -3,7 +3,7 @@ import Image from "next/image"
 const Hero: React.FC = () =>{
     return(
         <>
-        <div className="hero w-full flex bg-lightgray z-0 mt-[-5.5rem] mb-20 relative justify-center items-center">
+        <div className="hero w-full h-[100vh] flex bg-lightgray z-0 mt-[-5.5rem] mb-20 relative justify-center items-center">
             <div className="hero-hello">
                 <h2 className="hello text-heading3 translate-x-[70%] duration-1000 cursor-zoom-in hover:translate-x-0 transition-all ease-in-out absolute right-0 bg-offblack font-bold text-white py-5 px-[31px] rounded-l-full hover:shadow-xl hover:shadow-gray">👋<span className=" ml-10 ">Hi I'm Amalia</span></h2>
              </div>
@@ -12,9 +12,10 @@ const Hero: React.FC = () =>{
                 <h1>Webflow Developer - UI/UX Designer - Webflow Developer - UI/UX Designer</h1>
             </div>
             <Image 
-                src="assets\hero-img.png"
+                src="/assets/hero-img.png"
                 alt="Hero Image"
-                className="img-hero" />
+                layout='fill'
+                className="img-hero w-full h-full" />
         </div>
         </>
     )

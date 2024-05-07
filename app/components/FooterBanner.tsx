@@ -12,7 +12,7 @@ const FooterBanner: React.FC = () =>{
                     <h2 className="text-heading2">Have something in mind?</h2>
                     <h2 className="text-heading2 with-pic flex items-center gap-3">
                         <Image 
-                        src="assets/hero-img.png" 
+                        src="/assets/hero-img.png" 
                         alt="person" 
                         className="footer-img w-20 h-20 rounded-full object-cover object-top bg-lightgray outline-none  border-none"/>let's build it together.</h2>
                 </div>
