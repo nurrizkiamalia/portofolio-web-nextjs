@@ -8,11 +8,27 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        offwhite: "#F4F7FA",
+        offblack: "#0B0C0E",
+        gray: "#3C3D3E",
+        lightgray: "#C7D0D9"
       },
+      fontFamily:{
+        dmSans: "DM Sans, sans-serif",
+        inter: "Inter, sans-serif"
+      },
+      fontSize: {
+        headdisplay: "150.4px",
+        heading1: "91px",
+        heading2: "60px",
+        heading3: "40px",
+        heading4: "27px",
+        paraLg: "27px",
+        paraMd: "18px",
+        paraSm: "16px",
+        paraXs: "14px"
+      }
     },
   },
   plugins: [],

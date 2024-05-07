@@ -2,32 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap');
+
+html{
+  scrollbar-width: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+html, body{
+  margin: 0;
+  padding: 0;
+}
+
+.slide-text, .project-scroll{
+  scrollbar-width: none;
+}
+
+.project-box:hover .btn-project{
+  display: block;
+  box-shadow: 0px 0px 50px black;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.contact-detail a{
+  cursor: alias;
+}
+
+.responsive-nav::-webkit-scrollbar{
+  z-index: 41;
+  right: 0;
+  position: fixed;
+  animation: slide-to-bottom 1s;
+}
+
+.slide-text{
+  animation: slide-to-left 20s linear infinite;
+  transform: translateX(0%);
+}
+
+.menu-toggle::-webkit-scrollbar{
+  transform: scale(1,1);
+}
+
+.btn-open.btn-recent:hover i{
+  color: black;
+}
+
+.btn-close.btn-recent:hover i{
+  color: black;
+}
+
+.btn-open.btn-recent:hover .menu-open{
+  transform: translateX(0%);
+  transition: transform 1s ease-in-out;
+}
+
+@keyframes slide-to-bottom {
+  from{
+      transform:  translateY(100%);
+      transition: transform 1s ease-in;
+  } to{
+      transform: translateY(0%);
+      transition: transform 1s ease-out;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@keyframes slide-to-left {
+  0%{
+    left: 100%;
+    transform: translate(-100%);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+100%{
+    left: -100%;
+    transform: translate(0%);
+}
 }
