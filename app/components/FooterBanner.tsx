@@ -14,6 +14,8 @@ const FooterBanner: React.FC = () =>{
                         <Image 
                         src="/assets/hero-img.png" 
                         alt="person" 
+                        width={80}
+                        height={80}
                         className="footer-img w-20 h-20 rounded-full object-cover object-top bg-lightgray outline-none  border-none"/>let's build it together.</h2>
                 </div>
 

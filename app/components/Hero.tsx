@@ -14,8 +14,12 @@ const Hero: React.FC = () =>{
             <Image 
                 src="/assets/hero-img.png"
                 alt="Hero Image"
-                layout='fill'
-                className="img-hero w-fit h-fit" />
+                width={0}
+                height={0}
+                layout='responsive'
+                objectFit="cover"
+                objectPosition="center"
+                className="img-hero max-w-fit max-h-fit place-content-center align-middle bottom-0 absolute -z-10" />
         </div>
         </>
     )

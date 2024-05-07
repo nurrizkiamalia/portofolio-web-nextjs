@@ -16,13 +16,13 @@ const Projects: React.FC = () =>{
             <div className="list-project my-20" id="project">
                 <div className="project-container ">
                     <div className="carousel-primary flex flex-col">
-                        <div className="project-scroll h-[45vh] relative overflow-x-scroll">
+                        <div className="project-scroll h-[50vh] relative overflow-x-scroll">
                             <div className="flex gap-5 whitespace-nowrap absolute">
                                 {projectCard}
                             </div>
                         </div>
                         
-                        <div className="project-scroll h-[45vh] relative overflow-x-scroll">
+                        <div className="project-scroll h-[50vh] relative overflow-x-scroll">
                             <div className="flex gap-5 whitespace-nowrap absolute">
                                 {projectCard}
                             </div>
@@ -40,7 +40,12 @@ function ProjectList(props: any){
             <button className="btn-project hidden absolute bg-offwhite text-paraSm py-2 px-3 rounded-xl transition-all ease-in-out hover:bg-black hover:text-white">Visit the website <i className="ri-arrow-right-up-line"></i></button>
                 <Image src={`/assets/${props.item.Image}`}  
                 alt="project" 
-                className="object-cover object-center w-full h-full" />
+                width={0}
+                height={0}
+                layout='responsive'
+                objectFit="cover"
+                objectPosition="center"
+                className=" w-full h-full" />
         </div>
     )
 }
