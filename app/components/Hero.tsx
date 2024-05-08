@@ -18,7 +18,7 @@ const Hero: React.FC = () =>{
                 height={400}
                 objectFit="cover"
                 objectPosition="center"
-                className="img-hero w-fit place-content-center align-middle -z-10" />
+                className="img-hero w-fit place-content-center align-middle absolute bottom-0 top-5 -z-10" />
         </div>
         </>
     )
