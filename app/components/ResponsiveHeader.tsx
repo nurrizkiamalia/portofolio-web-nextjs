@@ -36,7 +36,7 @@ const ResponsiveHeader: React.FC = () =>{
     return(
         <>
             {navHidden &&
-            <div className="responsive-nav z-50 fixed right-0 top-0 " onScroll={handleScroll}>
+            <div className="responsive-nav z-50 fixed right-0 top-0 max-lg:fixed " onScroll={handleScroll}>
             <div className="menu-toggle p-10 right-0 fixed">
             <button className="btn-open btn-recent  bg-offblack hover:bg-offwhite border-[3px] border-black hover:bg-transparent hover:text-offblack p-7 rounded-full cursor-pointer px-8 hover:shadow-lg hover:shadow-gray" onClick={handleMenuOpen}>
                 <i className="fa-solid fa-grip-lines text-offwhite "></i>

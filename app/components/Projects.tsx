@@ -16,13 +16,13 @@ const Projects: React.FC = () =>{
             <div className="list-project my-20" id="project">
                 <div className="project-container ">
                     <div className="carousel-primary flex flex-col">
-                        <div className="project-scroll h-[50vh] relative overflow-x-scroll">
+                        <div className="project-scroll h-[45vh] relative overflow-x-scroll">
                             <div className="flex gap-5 whitespace-nowrap absolute">
                                 {projectCard}
                             </div>
                         </div>
                         
-                        <div className="project-scroll h-[50vh] relative overflow-x-scroll">
+                        <div className="project-scroll h-[45vh] relative overflow-x-scroll">
                             <div className="flex gap-5 whitespace-nowrap absolute">
                                 {projectCard}
                             </div>
